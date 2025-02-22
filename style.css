@@ -385,6 +385,11 @@ input:focus {
 }
 /* About Section */
 #about {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+    color: white !important; /* Change if text is invisible */
     padding: 5rem 10%;
     background: var(--primary-color);
     position: relative;
@@ -1169,10 +1174,3 @@ section h2::after {
     }
 }
 
-section {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    height: auto !important;
-    color: white !important; /* Change if text is invisible */
-}
