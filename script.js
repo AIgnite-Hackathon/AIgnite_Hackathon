@@ -29,28 +29,24 @@ createBinaryRain();
 const navLinks = document.querySelectorAll('.nav-links a');
 const sections = document.querySelectorAll('section');
 
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-            current = section.getAttribute('id');
-        }
-    });
+if (window.innerWidth > 768) { // Runs only on desktop
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (scrollY >= sectionTop - 50) {
+                current = section.getAttribute('id');
+            }
+        });
 
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-            link.style.color = getComputedStyle(document.documentElement)
-                .getPropertyValue('--secondary-color');
-        } else {
-            link.style.color = getComputedStyle(document.documentElement)
-                .getPropertyValue('--text-color');
-        }
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
     });
-});
+}
 
 // Registration Modal with Animation
 const modal = document.getElementById('registerModal');

@@ -1168,3 +1168,11 @@ section h2::after {
         padding: 8px 15px;
     }
 }
+
+section {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+    color: white !important; /* Change if text is invisible */
+}
