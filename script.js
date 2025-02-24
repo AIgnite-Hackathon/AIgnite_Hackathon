@@ -73,7 +73,7 @@ teamSection.innerHTML = `
     <input type="email" name="leaderEmail" placeholder="Leader Email" required>
     <input type="tel" name="leaderWhatsapp" placeholder="Leader WhatsApp Number" required>
     <input type="text" name="leaderBranch" placeholder="Leader Branch" required>
-    <input type="text" name="leaderCollegeID" placeholder="Leader College Registered Number" required>
+    <input type="text" name="leaderCollegeID" placeholder="Leader Roll Number" required>
 `;
 teamMembersContainer.appendChild(teamSection);
 
@@ -84,11 +84,11 @@ for (let i = 1; i <= 5; i++) {
     memberDiv.style.animationDelay = `${i * 0.1}s`;
     memberDiv.innerHTML = `
         <h3>Team Member ${i}</h3>
-        <input type="text" name="memberName${i}" placeholder="Name" required>
-        <input type="email" name="memberEmail${i}" placeholder="Email" required>
-        <input type="tel" name="memberWhatsapp${i}" placeholder="WhatsApp Number" required>
-        <input type="text" name="memberBranch${i}" placeholder="Branch" required>
-        <input type="text" name="memberCollegeID${i}" placeholder="College Registered Number" required>
+        <input type="text" name="memberName${i}" placeholder="Name">
+        <input type="email" name="memberEmail${i}" placeholder="Email">
+        <input type="tel" name="memberWhatsapp${i}" placeholder="WhatsApp Number">
+        <input type="text" name="memberBranch${i}" placeholder="Branch">
+        <input type="text" name="memberCollegeID${i}" placeholder="Roll Number">
     `;
     teamMembersContainer.appendChild(memberDiv);
 }
@@ -208,49 +208,49 @@ const problems = [
         problemId: "AH_PS_001",
         title: "Smart Healthcare Assistant",
         description: "• Develop an AI-based healthcare assistant to provide medical information and recommendations. \n• Implement a chatbot that can answer health-related queries.\n• Use natural language processing (NLP) to understand and respond to user questions.\n• Integrate a symptom checker to provide basic diagnosis and advice.\n• Ensure data privacy and security.",
-        field: "AI Innovators"
+        field: "Artificial intelligence (AI) "
     },
     {
         problemId: "AH_PS_002",
         title: "AI-Powered Personal Finance Manager",
         description: "• Create an AI-driven application to help users manage their finances. \n• Implement a system to track income, expenses, and savings.\n• Use machine learning algorithms to predict spending patterns and suggest budget adjustments.\n• Provide personalized financial advice and recommendations.\n• Include data visualization tools for easy analysis of financial data.",
-        field: "AI Innovators"
+        field: "Artificial intelligence (AI) "
     },
     {
         problemId: "AH_PS_003",
         title: "Smart Traffic Management System",
         description: "• Design an AI-based system to optimize traffic flow in urban areas.\n• Use computer vision techniques to analyze real-time traffic footage.\n• Develop algorithms to predict traffic congestion and suggest alternate routes.\n• Implement machine learning models to optimize traffic signal timings.\n• Provide a user-friendly interface for traffic authorities to monitor and manage traffic.",
-        field: "AI Innovators"
+        field: "Artificial intelligence (AI) "
     },
     {
         problemId: "AH_PS_004",
         title: "Intelligent Tutoring System",
         description: "• Build an AI-driven tutoring platform to personalize the learning experience for students.\n• Implement adaptive learning algorithms to customize content based on student performance.\n• Use NLP to understand student queries and provide relevant explanations.\n•  Incorporate gamification elements to enhance engagement and motivation.\n• Provide detailed analytics on student progress and performance.",
-        field: "AI Innovators"
+        field: "Artificial intelligence (AI) "
     },
     {
         problemId: "AH_PS_005",
         title: "AI-Based News Aggregator",
         description: "• Develop a news aggregator that uses AI to deliver personalized news content.\n• Implement machine learning algorithms to understand user preferences and interests.\n• Use NLP to analyze and categorize news articles.\n• Provide personalized news recommendations and summaries.\n• Ensure the system detects and filters out fake news and biased content.",
-        field: "AI Innovators"
+        field: "Artificial intelligence (AI) "
     },
     {
         problemId: "AH_PS_006",
         title: "Smart Home Automation System",
         description: "• Create an AI-powered system to automate various aspects of home management.\n• Implement voice recognition and NLP to control home devices.\n• Use machine learning to predict and automate routine tasks (e.g., adjusting thermostat, lighting).\n• Develop a mobile app for remote control and monitoring of home devices.\n• Ensure security features to protect user data and prevent unauthorized access.",
-        field: "AI Innovators"
+        field: "Artificial intelligence (AI) "
     },
     {
         problemId: "AH_PS_007",
         title: "AI-Based Job Recommendation System",
         description: "• Design a platform that uses AI to match job seekers with suitable job opportunities.\n• Implement machine learning algorithms to analyze resumes and job descriptions.\n• Use NLP to understand and match job seeker skills with job requirements.\n• Provide personalized job recommendations and alerts.\n• Include features for tracking application status and receiving feedback.",
-        field: "AI Innovators"
+        field: "Artificial intelligence (AI) "
     },
     {
         problemId: "AH_PS_008",
         title: "AI-Driven Environmental Monitoring System",
         description: "• Develop a system to monitor and analyze environmental data using AI.\n• Use sensors to collect data on air quality, temperature, humidity, etc.\n• Implement machine learning models to analyze and predict environmental trends.\n• Provide real-time alerts and recommendations for environmental protection.\nCreate a dashboard to visualize data and trends.",
-        field: "AI Innovators"
+        field: "Artificial intelligence (AI) "
     }
 ]
 ;
@@ -468,7 +468,7 @@ function displaySchedule() {
 
 // Rules and FAQs with Animation
 const rules = [
-    "Teams must consist of exactly 6 members",
+    "Teams must consist of 4-6 members",
     "Team should have at least one girl",
     "All team members must be currently enrolled students",
     "Use of pre-existing code must be disclosed",
