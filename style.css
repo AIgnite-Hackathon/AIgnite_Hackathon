@@ -1138,6 +1138,7 @@ section h2::after {
     box-shadow: 0 0 30px rgba(100, 154, 255, 0.3);;
     animation: floatText 3s infinite alternate ease-in-out;
     z-index: 1000;
+    display: none;
 }
 
 /* Floating animation */
@@ -1153,9 +1154,11 @@ section h2::after {
         padding: 8px 15px;
     }
 }
-
-eloped-by {
-    width: 100%;
+/* 
+developed-by {
+    width: 100vw;
+    display: flex;
+    align-items: center;
     background:var(--primary-color);
     border-top: 2px solid var(--text-color);
     color: white;
@@ -1166,25 +1169,26 @@ eloped-by {
     white-space: nowrap;
 }
 
-/* Outer wrapper to ensure smooth movement */
+Outer wrapper to ensure smooth movement
 .marquee-container {
     width: 100%;
     overflow: hidden;
     position: relative;
+    height: 40px; /* Adjust based on your design
 }
 
-/* Inner scrolling text */
+
+Inner scrolling text
 .marquee {
     display: flex;
     white-space: nowrap;
-    /* animation: marquee 20s linear infinite; */
+    text-align: center;
 }
-
 @keyframes marquee {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-90%);
     }
     to {
-        transform: translateX(100%);
+        transform: translateX(90%);
     }
-}
+} */
