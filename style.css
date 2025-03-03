@@ -1177,7 +1177,7 @@ eloped-by {
 .marquee {
     display: flex;
     white-space: nowrap;
-    animation: marquee 20s linear infinite;
+    /* animation: marquee 20s linear infinite; */
 }
 
 @keyframes marquee {
