@@ -140,6 +140,7 @@ nav {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    visibility: hidden;
 }
 
 .register-btn::before {
@@ -1138,7 +1139,6 @@ section h2::after {
     box-shadow: 0 0 30px rgba(100, 154, 255, 0.3);;
     animation: floatText 3s infinite alternate ease-in-out;
     z-index: 1000;
-    display: none;
 }
 
 /* Floating animation */
